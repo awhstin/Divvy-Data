@@ -1,7 +1,6 @@
 #Below you will see the Quarters section is commented out except for the first Quarter, 
 #I wanted to provide all the data but I only use Q1 in my viz.
 
-setwd("H:/R/R Directory/Test")
 library(plyr)
 library(ggplot2)
 library(ggalt) 

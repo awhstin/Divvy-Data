@@ -2,6 +2,8 @@
 
 Here is a walk-through of the Divvy Bike data in Chicago. The datasets imported are broken up by quarter in the year 2015.
 
+See my blog post on the whole process [here](http://www.austinwehrwein.com/data-visualization/divvy-bike-data/)
+
 This is the shapefile map I use to plot
 ![Chicago Shapefile](https://github.com/awhstin/Divvy-Data/blob/master/Rplot01.png)
 

@@ -76,6 +76,18 @@ map+geom_segment(data=theages, aes(x=longitude, y=latitude, xend=lon1, yend=lat1
   guides(colour = guide_legend(title="Age Range",override.aes = list(alpha = 1)))+
   theme(legend.position="none")
   
+#More Divvy Themed Map
+map<-ggplot(data=na.df)+geom_polygon(aes(long,lat, group=group),color="black", alpha=.25)+
+  scale_x_continuous(limits = c(-87.725, -87.575))+ scale_y_continuous(limits = c(41.825, 41.95))
+
+map<-map+geom_segment(data = theages,aes(x=longitude, y=latitude, xend=lon1, yend=lat1, colour=range), alpha=.25)+
+  scale_colour_brewer(palette="Blues")+
+  guides(colour = guide_legend(title="Age Range",override.aes = list(alpha = 1)))+
+  theme(panel.grid.minor=element_blank(), panel.grid.major=element_blank(), panel.background = element_rect(fill="#2FCAFC"), axis.ticks=element_blank(), axis.text=element_blank(), axis.title= element_blank(), legend.position="none")
+
+map+geom_point(data=stationsa,aes(x=longitude, y=latitude), color="white" ,alpha=.55, size=I(5))
+
+  
 #waffle
 time<-c(`Thirties (71657)`=71657,`Twenties (40582)`=40582, `Forties (33556)`=33556,`Fifties (23520)`=23520,`Sixties (7544)`=7544,`Seventy Plus (725)`=725,`Tens (274)`=274)
 waffles<-waffle(time/250, rows=10, size=0.25, colors=c("#66C2A5", "#FC8D62", "#8DA0CB", "#E78AC3", "#A6D854", "#FFD92F", "#E5C494"), xlab="1 square == 250 riders", legend_pos = "top")

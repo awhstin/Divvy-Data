@@ -77,6 +77,8 @@ map+geom_segment(data=theages, aes(x=longitude, y=latitude, xend=lon1, yend=lat1
   theme(legend.position="none")
   
 #More Divvy Themed Map
+#details can be found at www.austinwehrwein.com/data-visualization/divvy-bike-data/
+#this section plots the age ranges, with the blue color from divy
 map<-ggplot(data=na.df)+geom_polygon(aes(long,lat, group=group),color="black", alpha=.25)+
   scale_x_continuous(limits = c(-87.725, -87.575))+ scale_y_continuous(limits = c(41.825, 41.95))
 

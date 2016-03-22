@@ -14,3 +14,6 @@ This is the resulting once grouped by calculated age range
 
 Finally here is the resulting waffle plot thanks to the new Waffle Package
 ![Waffle plot by Age Range](https://github.com/awhstin/Divvy-Data/blob/master/waffles.png)
+
+Here is the final visualization with the Divvy Theme.
+
